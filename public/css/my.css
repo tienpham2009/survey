@@ -1,0 +1,44 @@
+.title {
+    text-align: center;
+    margin: 2rem;
+    max-width: 62rem;
+}
+
+.btn-title {
+    width: 24rem;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.selected {
+    border: 3px solid green;
+}
+
+.result {
+    background-color: rgba(45, 55, 72, 0.27);
+}
+
+.info {
+    width: 40rem;
+    margin-left: 12.5rem;
+}
+
+.label {
+    display : block;
+    width: 23rem;
+}
+.label > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+.label > input + div { /* DIV STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+.label > input:checked + div{ /* (RADIO CHECKED) DIV STYLES */
+    background-color: #ffd6bb;
+    border: 1px solid #ff6600;
+    max-width: 20rem;
+}
